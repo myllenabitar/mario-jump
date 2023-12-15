@@ -3,7 +3,6 @@ const pipe = document.querySelector('.pipe');
 
 const container = document.querySelector('.container');
 
-let pontos = 0;
 
 const jump = () => {
     mario.classList.add('jump');
