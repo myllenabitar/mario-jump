@@ -29,23 +29,19 @@
 .jump {
     animation: jump 500ms ease-out;
 }
-
-.clouds {
-    width:550;
-    position: absolute;
-    animation: clouds-animation 20s infinite linear;
-}
 .container {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    color:rgb(200, 0, 0);
     width: 100%;
     height: 100px;
     margin-top:10px;
     text-align: center;
     display: none;
     position: absolute;
+}
 
+.clouds {
+    width:550;
+    position: absolute;
+    animation: clouds-animation 20s infinite linear;
 }
 .pontos{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
