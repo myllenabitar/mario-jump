@@ -40,19 +40,7 @@
     position: absolute;
     animation: clouds-animation 20s infinite linear;
 }
-input{
-    width:40px;
-    height:40px;
-    border: 2px solid orangered;
-    border-radius: 4px;
-    background:orangered;
-    color:yellow;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-family: Pixelify Sans; 
-    font-size: large;
-    text-align: center;
-}
+
 #pontuacao{
     width:40px;
     height:40px;

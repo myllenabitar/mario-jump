@@ -51,11 +51,8 @@ const pontos = setInterval (() => {
          
         }
 })
-
-document.addEventListener('keydown', jump);
-pontos =  setInterval(pontuacao, 500);
         
 document.addEventListener('keydown', jump);
-checarsePulouDoCano =  setInterval(pontuacao, 1000);     
+pontos =  setInterval(pontuacao, 500);    
 
 
