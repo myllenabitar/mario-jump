@@ -5,21 +5,29 @@
     <meta name ="viewport" content ="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Pixelify+Sans:wght@600&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">  
     <script src="script.js" defer></script>
     <title>Mario Jump</title>
 </head>
 <body>
     <div class="game-board" class="fim">
+        
         <div class="container">
             <h1><img src="mario-jump-images/game-over2.png"></h1>
         </div>
-        <div class="score" id="score">
+        <div id="pontuacao">0</div>
+        <div id="score">
             <input type="text" value="0" disabled><br>
             <canvas width="60" height="40"></canvas>  
-        </div>   
+        </div>
+    
         <img src="mario-jump-images/clouds.png"  class="clouds">
         <img src="mario-jump-images/pipe.png"  class="pipe">
         <img src="mario-jump-images/mario.gif"  class="mario">
+
+
     </div>   
    
 </body>

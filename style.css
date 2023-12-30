@@ -36,7 +36,7 @@
     position: absolute;
 }
 .clouds {
-    width:550;
+    width:550px;
     position: absolute;
     animation: clouds-animation 20s infinite linear;
 }
@@ -49,10 +49,24 @@ input{
     color:yellow;
     margin-top: 20px;
     margin-left: 20px;
+    font-family: Pixelify Sans; 
     font-size: large;
-    font-weight: bold;
     text-align: center;
 }
+#pontuacao{
+    width:40px;
+    height:40px;
+    border: 2px solid orangered;
+    border-radius: 4px;
+    background:orangered;
+    color:yellow;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Pixelify Sans; 
+    font-size: large;
+    text-align: center;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;
