@@ -2,10 +2,14 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');    
 const container = document.querySelector('.container');
 const pontuacao = document.getElementById('pontuacao');
-
-
+const botao = document.querySelector('.botao');
+let loop;
 let pontuacaoAtual = 0
 
+botao.addEventListener('click', function (){
+   console.log('inicia o jogo')
+   loop = setInterval(game)
+})
 function jump() {
     mario.classList.add('jump');
     setTimeout(() => {
@@ -13,8 +17,9 @@ function jump() {
     }, 500);
    
 }
-const loop = setInterval(() => {  
-    console.log('loop')
+
+function game(){ 
+    // console.log('loop')
 
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
@@ -34,25 +39,27 @@ const loop = setInterval(() => {
         
         clearInterval(loop);
     }
-})
+}
 
 const pontos = setInterval (() => {
-    console.log('pontos')
+    // console.log('pontos', pontuacaoAtual)
 
     const pipePosition = pipe.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
     
     if (marioPosition > 80 && pipePosition <= 0 && pipePosition <= 120){
+        console.log('pontou', marioPosition, pipePosition)
         pontuacaoAtual += +1;
         pontuacao.textContent = pontuacaoAtual;
-          setInterval(() => {
-            pontos =  setInterval(pontuacao, 500); 
-          })
+        console.log(pontuacaoAtual)
+        //   setInterval(() => {
+        //     pontos =  setInterval(pontuacao, 500); 
+        //   })
          
         }
-})
+}, 10)
         
 document.addEventListener('keydown', jump);
-pontos =  setInterval(pontuacao, 500);    
+// pontos =  setInterval(pontuacao, 500);    
 
 
