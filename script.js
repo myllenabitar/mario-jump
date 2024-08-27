@@ -2,28 +2,21 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');    
 const container = document.querySelector('.container');
 const pontuacao = document.getElementById('pontuacao');
-const botao = document.querySelector('.botao');
 let loop;
 let pontuacaoAtual = 0
 
-botao.addEventListener('click', function (){
-   console.log('inicia o jogo')
-   loop = setInterval(game)
-})
 function jump() {
     mario.classList.add('jump');
     setTimeout(() => {
         mario.classList.remove('jump');
-    }, 500);
-   
+    }, 500); 
 }
-
 function game(){ 
-    // console.log('loop')
-
+    //console.log(game);
     const pipePosition = pipe.offsetLeft;
-    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
-
+    const marioPosition = mario.offsetTop;
+    
+    //console.log(pipe.style.animation)
     if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
         pipe.style.animation = 'none';
         pipe.style.left = '${pipePosition}px';
@@ -36,30 +29,31 @@ function game(){
         mario.style.margin.Left = '50px'
 
         container.style.display = 'block';
-        
         clearInterval(loop);
+       // console.log(game);
+    } else {
+            // Se o Mario não bateu no cano, ele passou e você pode contar pontos
+            pontos();
+        }
     }
-}
-
-const pontos = setInterval (() => {
+    
+function pontos() {
     // console.log('pontos', pontuacaoAtual)
 
     const pipePosition = pipe.offsetLeft;
-    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
+    const marioPosition = mario.offsetTop;
     
-    if (marioPosition > 80 && pipePosition <= 0 && pipePosition <= 120){
+    
+    if (marioPosition > 80 && pipePosition <= 120){
         console.log('pontou', marioPosition, pipePosition)
         pontuacaoAtual += +1;
         pontuacao.textContent = pontuacaoAtual;
-        console.log(pontuacaoAtual)
-        //   setInterval(() => {
-        //     pontos =  setInterval(pontuacao, 500); 
-        //   })
-         
+        //console.log(pontuacaoAtual);
         }
-}, 10)
+}
         
 document.addEventListener('keydown', jump);
-// pontos =  setInterval(pontuacao, 500);    
+
+  
 
 
