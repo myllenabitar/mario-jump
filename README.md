@@ -1,6 +1,6 @@
 <h1 align="center">MARIO JUMP</h1>
 
-<img src="https://github.com/user-attachments/assets/876942e1-7bf0-4ca9-a331-4f1efdfc48fe" alt="logo star wars">
+<img src="https://github.com/user-attachments/assets/876942e1-7bf0-4ca9-a331-4f1efdfc48fe" alt="mario-jump">
 
 <h2>Badges:</h2>
 Ultima versão: Janeiro 2024
