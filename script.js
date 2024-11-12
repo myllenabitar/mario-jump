@@ -2,8 +2,9 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');    
 const container = document.querySelector('.container');
 const pontuacao = document.getElementById('pontuacao');
+let pontuacaoAtual = 0;
 let loop;
-let pontuacaoAtual = 0
+let obstaculoPassado = false;
 
 function jump() {
     mario.classList.add('jump');
@@ -11,48 +12,42 @@ function jump() {
         mario.classList.remove('jump');
     }, 500); 
 }
-function game(){ 
-    //console.log(game);
+
+function game() { 
     const pipePosition = pipe.offsetLeft;
-    const marioPosition = mario.offsetTop;
-    
-    //console.log(pipe.style.animation)
-    if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
+
+    if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+        // Colisão com o cano: game over
         pipe.style.animation = 'none';
-        pipe.style.left = '${pipePosition}px';
+        pipe.style.left = `${pipePosition}px`;
 
         mario.style.animation = 'none';
-        mario.style.bottom = '${marioPosition}px';
+        mario.style.bottom = `${marioPosition}px`;
 
         mario.src = "/mario-jump-images/game-over.png";
-        mario.style.width = '75px'
-        mario.style.margin.Left = '50px'
+        mario.style.width = '75px';
+        mario.style.marginLeft = '50px';
 
         container.style.display = 'block';
         clearInterval(loop);
-       // console.log(game);
-    } else {
-            // Se o Mario não bateu no cano, ele passou e você pode contar pontos
-            pontos();
-        }
-    }
-    
-function pontos() {
-    // console.log('pontos', pontuacaoAtual)
-
-    const pipePosition = pipe.offsetLeft;
-    const marioPosition = mario.offsetTop;
-    
-    
-    if (marioPosition > 80 && pipePosition <= 120){
-        console.log('pontou', marioPosition, pipePosition)
-        pontuacaoAtual += +1;
+    } else if (pipePosition < 0 && !obstaculoPassado) {
+        // O Mario passou pelo cano com sucesso, incrementa pontuação
+        pontuacaoAtual += 1;
         pontuacao.textContent = pontuacaoAtual;
-        //console.log(pontuacaoAtual);
-        }
+        obstaculoPassado = true;
+    } else if (pipePosition > 120) {
+        // Reset para próximo obstáculo
+        obstaculoPassado = false;
+    }
 }
-        
+
+// Iniciar o loop do jogo
+loop = setInterval(game, 20); // Executa a função game a cada 20ms
+
 document.addEventListener('keydown', jump);
+
+
 
   
 
