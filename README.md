@@ -1,26 +1,83 @@
-<h1 align="center">MARIO JUMP</h1>
-<img src="https://github.com/user-attachments/assets/876942e1-7bf0-4ca9-a331-4f1efdfc48fe" alt="mario-jump">
+# Mario Jump
 
-<h2>Badges:</h2>
-Ultima versão: Novembro 2024.
+Um jogo inspirado no universo de Mario World, desenvolvido com JavaScript puro, onde o objetivo é superar obstáculos e acumular pontos. Divertido e desafiador!
 
-<h2>Descrição de Projeto</h2>
-Projeto pessoal, desenvolvido com Javascript puro. O projeto consiste em um jogo no cenário de Mario World, onde o personagem anda automaticamente e precisa pular os obstáculos e a cada obstáculo vencido, conta ponto.
+---
 
-<h2>Status do Projeto</h2><h4 align="center">:star: Projeto Concluído! :star:</h4>
+## 📂 Índice
 
-<h2>:hammer:Funcionalidades e Demonstração da Aplicação</h2>
-O mario começa o jogo andando, pula pelos obstáculos no botão "space", e cada vez que pula conta 1 ponto, se não pular e bater no cano, dá game over. Como na imagem:
+- [Descrição do Projeto](#-descrição-do-projeto)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Como Executar o Projeto](#-como-executar-o-projeto)
+- [Demonstração](#-demonstração)
+- [Status do Projeto](#-status-do-projeto)
+- [Autor](#-autor)
+
+---
+
+## 📜 Descrição do Projeto
+
+Este projeto pessoal é um jogo no estilo "side-scroller" ambientado no cenário de Mario World. O personagem se movimenta automaticamente, e o jogador precisa ajudá-lo a pular obstáculos pressionando a barra de espaço. Cada obstáculo superado adiciona um ponto ao placar. Se o Mario colidir com um obstáculo, o jogo termina.
+
+---
+
+## ✨ Funcionalidades
+
+- Movimento automático do personagem.
+- Controle simples: pular usando a tecla "Space".
+- Contador de pontos para cada obstáculo vencido.
+- Tela de Game Over ao colidir com um obstáculo.
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+- **JavaScript**
+- **HTML**
+- **CSS**
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd mario-jump
+   ```
+
+3. Abra o arquivo `index.html` em seu navegador usando a funcionalidade "Go Live" de sua IDE ou apenas clicando no arquivo.
+
+4. Divirta-se jogando Mario Jump!
+
+---
+
+## 🎥 Demonstração
+
+Adicione aqui um GIF ou captura de tela mostrando o jogo em ação, como por exemplo:
+
 <img src="https://github.com/user-attachments/assets/758afb2f-bc46-4621-9717-be749ca37400" alt="game-over">
 
-<h2>Acesso ao projeto</h2>
-Go live
+---
 
-<h2> Tecnologias Utilizadas</h2>
-<h3> JavaScript</h3>
-<h3> HTML</h3>
-<h3> CSS</h3>
+## 📈 Status do Projeto
 
-<H2>Autores</H2>
-<h3>Myllena Bitar</h3>
-<img src="https://avatars.githubusercontent.com/u/111917539?v=4" alt="Myllena Bitar">
+:star: **Projeto Concluído!** :star:
+
+---
+
+## 🖋️ Autor
+
+<div align="center">
+  <h3>Myllena Bitar</h3>
+  <img src="https://avatars.githubusercontent.com/u/111917539?v=4" alt="Myllena Bitar" width="120" style="border-radius: 50%;">
+  <p>Desenvolvedora Front-end em transição de carreira, apaixonada por criar interfaces funcionais e estéticas!</p>
+  <a href="https://github.com/myllenabitar" target="_blank">🔗 GitHub</a>
+</div>
