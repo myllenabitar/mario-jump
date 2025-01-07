@@ -2,7 +2,8 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');    
 const container = document.querySelector('.container');
 const pontuacao = document.getElementById('pontuacao');
-let pontuacaoAtual = 0;
+const startButton = document.getElementById('startButton');
+let pontuacaoAtual = 0; // tentar zerar pontuação e jogo pra funcionar com start
 let loop;
 let obstaculoPassado = false;
 
@@ -41,6 +42,7 @@ function game() {
         obstaculoPassado = false;
     }
 }
+
 
 // Iniciar o loop do jogo
 loop = setInterval(game, 20); // Executa a função game a cada 20ms
