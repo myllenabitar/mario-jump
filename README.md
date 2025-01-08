@@ -1,6 +1,7 @@
 # Mario Jump
 
 Um jogo inspirado no universo de Mario World, desenvolvido com JavaScript puro, onde o objetivo é superar obstáculos e acumular pontos. Divertido e desafiador!
+<img src="https://github.com/user-attachments/assets/6c111496-b0a9-4e27-a4ff-8804cfeef6b1" alt="mario-jump">
 
 ---
 
@@ -10,7 +11,6 @@ Um jogo inspirado no universo de Mario World, desenvolvido com JavaScript puro, 
 - [Funcionalidades](#-funcionalidades)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como Executar o Projeto](#-como-executar-o-projeto)
-- [Demonstração](#-demonstração)
 - [Status do Projeto](#-status-do-projeto)
 - [Autor](#-autor)
 
@@ -56,14 +56,6 @@ Este projeto pessoal é um jogo no estilo "side-scroller" ambientado no cenário
 3. Abra o arquivo `index.html` em seu navegador usando a funcionalidade "Go Live" de sua IDE ou apenas clicando no arquivo.
 
 4. Divirta-se jogando Mario Jump!
-
----
-
-## 🎥 Demonstração
-
-Adicione aqui um GIF ou captura de tela mostrando o jogo em ação, como por exemplo:
-
-<img src="https://github.com/user-attachments/assets/758afb2f-bc46-4621-9717-be749ca37400" alt="game-over">
 
 ---
 
